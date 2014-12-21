@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="sonata.core.form.type.datetime_picker" class="Acme\DemoBundle\Form\Type\DateTimePickerType">
+            <tag name="form.type" alias="sonata_type_datetime_picker" />
+            <argument type="service" id="sonata.core.date.moment_format_converter" />
+        </service>
+    </services>
+</container>
